@@ -36,7 +36,7 @@ const DataTablePage = () => {
           style={{ maxWidth: "300px" }}
         />
       </Form>
-      <DataTable data={formData} searchQuery={searchQuery} />
+      <DataTable data={formData} searchQuery={searchQuery} onEdit={fetchFormData} />
     </Container>
   );
 };

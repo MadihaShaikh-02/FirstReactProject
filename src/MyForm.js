@@ -112,8 +112,11 @@ const MyForm = ({ onSubmitSuccess }) => {
                 />
 
                 <Button
+                  style={{
+                    backgroundColor: "rgb(181, 110, 220)",
+                    borderColor: "rgb(128, 0, 128)",
+                  }}
                   type="submit"
-                  variant="primary"
                   className="mt-3"
                   disabled={isSubmitting}
                 >

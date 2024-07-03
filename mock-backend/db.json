@@ -2,9 +2,9 @@
   "formData": [
     {
       "id": "1",
-      "firstName": "Madiha",
+      "firstName": "Lubna",
       "lastName": "Shaikh",
-      "email": "madiha02@gmail.com",
+      "email": "Lubna17@gmail.com",
       "message": "Done!!!"
     },
     {
@@ -26,14 +26,14 @@
       "firstName": "Arya",
       "lastName": "Kamat",
       "email": "aryakamat@gmail.com",
-      "message": "Hey!!!"
+      "message": "Hey good mrng!!!"
     },
     {
       "id": "7",
       "firstName": "kajal",
       "lastName": "Tak",
       "email": "kajaltak@gmail.com",
-      "message": "hello"
+      "message": "Hey!!!"
     },
     {
       "id": 0,

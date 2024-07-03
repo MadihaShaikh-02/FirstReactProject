@@ -8,13 +8,20 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav
+          style={{backgroundColor: "rgb(181, 110, 220)",}}
+          className="navbar navbar-expand-lg "
+        >
           <div className="container">
-            <Link className="navbar-brand" to="/">Home</Link>
+            <Link className="navbar-brand" to="/">
+              Home
+            </Link>
             <div className="collapse navbar-collapse">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/datatable">Data</Link>
+                  <Link className="nav-link" to="/datatable">
+                    Data
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -23,7 +30,12 @@ const App = () => {
 
         <div className="container">
           <Routes>
-            <Route path="/" element={<MyForm onSubmitSuccess={() => window.location.reload()} />} />
+            <Route
+              path="/"
+              element={
+                <MyForm onSubmitSuccess={() => window.location.reload()} />
+              }
+            />
             <Route path="/datatable" element={<DataTablePage />} />
           </Routes>
         </div>
@@ -33,4 +45,3 @@ const App = () => {
 };
 
 export default App;
-
