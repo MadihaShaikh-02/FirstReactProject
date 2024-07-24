@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Form } from 'react-bootstrap';
+import { Container, Form, InputGroup } from 'react-bootstrap';
 import DataTable from './DataTable';
+import { FaSearch } from "react-icons/fa";
 import axios from 'axios';
 
 const DataTablePage = () => {
@@ -28,13 +29,17 @@ const DataTablePage = () => {
     <Container className="mt-4">
       <h1 className="text-center mb-4">Form Data</h1>
       <Form className="d-flex justify-content-end mb-3">
-        <Form.Control
-          type="text"
-          placeholder="Search"
-          value={searchQuery}
-          onChange={handleSearchChange}
-          style={{ maxWidth: "300px" }}
-        />
+        <InputGroup style={{ maxWidth: "300px" }}>
+          <InputGroup.Text>
+            <FaSearch  style={{ height:"15px", width:"15px" }} />
+          </InputGroup.Text>
+          <Form.Control
+            type="text"
+            placeholder="Search"
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
+        </InputGroup>
       </Form>
       <DataTable data={formData} searchQuery={searchQuery} onEdit={fetchFormData} />
     </Container>
